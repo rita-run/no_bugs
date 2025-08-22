@@ -1,4 +1,6 @@
-package practice_4;
+package practice_4.solvers;
+
+import practice_4.Season;
 
 public class SwitchTaskSolver {
     public String dayOfWeek(int day) {
