@@ -1,7 +1,5 @@
 package practice_9.library;
 
-import practice_9.library.exceptions.BookNotFoundException;
-
 public class Main {
     public static void main(String[] args) {
         Library library = new Library();

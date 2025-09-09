@@ -1,4 +1,4 @@
-package practice_9.library.generics;
+package practice_9.generics;
 
 public class Box<T extends Book> {
     private T element;

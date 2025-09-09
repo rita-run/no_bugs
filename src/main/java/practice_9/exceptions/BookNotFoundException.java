@@ -1,4 +1,4 @@
-package practice_9.library.exceptions;
+package practice_9.exceptions;
 
 //checked: exception (children)
 public class BookNotFoundException extends Exception {

@@ -1,4 +1,4 @@
-package practice_9.library.exceptions;
+package practice_9.exceptions;
 
 //unchecked: Runtime exception
 public class InvalidBookException extends RuntimeException {

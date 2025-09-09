@@ -1,6 +1,4 @@
-package workbook.collections.exceptions;
-
-import java.util.ArrayList;
+package workbook.exceptions;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package workbook.collections.exceptions;
+package workbook.exceptions;
 
 public class ListIsEmptyException extends RuntimeException {
     public ListIsEmptyException(String message) {

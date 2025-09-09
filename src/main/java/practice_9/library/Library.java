@@ -1,7 +1,7 @@
 package practice_9.library;
 
-import practice_9.library.exceptions.BookNotFoundException;
-import practice_9.library.exceptions.InvalidBookException;
+import practice_9.exceptions.BookNotFoundException;
+import practice_9.exceptions.InvalidBookException;
 
 import java.util.ArrayList;
 import java.util.List;
