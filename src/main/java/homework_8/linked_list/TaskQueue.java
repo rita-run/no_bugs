@@ -18,9 +18,15 @@ public class TaskQueue {
     }
 
     public void processNextTask() {
-        System.out.println("The next task to process is: " + tasks.getFirst());
-        System.out.println("DONE: " + tasks.removeFirst());
-        System.out.println();
+        if (tasks.isEmpty()) {
+            System.out.println("There are no tasks!");
+            System.out.println();
+        } else {
+            System.out.println();
+            System.out.println("The next task to process is: " + tasks.getFirst());
+            System.out.println("DONE: " + tasks.removeFirst());
+            System.out.println();
+        }
     }
 
     public void printTasks() {

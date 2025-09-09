@@ -8,12 +8,16 @@ public class Main {
 
         ArrayDequeueProcessor processor = new ArrayDequeueProcessor();
 
-        processor.addElement("Element 1");
-        processor.addElement("Element 2");
-        processor.addElement("Element 3");
-        processor.addElement("Element 5");
-        processor.addElement("Element 6");
+        processor.addFirstElement("Element 1");
+        processor.addLastElement("Element 2");
+        processor.addFirstElement("Element 3");
+        processor.addLastElement("Element 5");
+
+        processor.printQueue();
 
         processor.processElementsAtTheEnds();
+
+        processor.printQueue();
+
     }
 }

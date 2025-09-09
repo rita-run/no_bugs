@@ -13,16 +13,20 @@ public class ArrayDequeueProcessor {
         this.arrayDeque = new ArrayDeque<>();
     }
 
-    public void addElement(String e) {
-        arrayDeque.add(e);
+    public void addFirstElement(String e) {
+        arrayDeque.addFirst(e);
+    }
+
+    public void addLastElement(String e) { arrayDeque.addLast(e);}
+
+    public void printQueue() {
+        System.out.println("Current queue: " + arrayDeque);
     }
 
     public void processElementsAtTheEnds() {
-        System.out.println(arrayDeque);
-        System.out.println(arrayDeque.peekFirst());
-        arrayDeque.pollFirst();
-        System.out.println(arrayDeque.peekLast());
-        arrayDeque.pollLast();
-        System.out.println(arrayDeque);
+        System.out.println("Will be deleted at the beginning: " + arrayDeque.peekFirst());
+        System.out.println("Deleted: " + arrayDeque.pollFirst());
+        System.out.println("Will be deleted at the end: " + arrayDeque.peekLast());
+        System.out.println("Deleted: " + arrayDeque.pollLast());
     }
 }

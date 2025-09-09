@@ -6,8 +6,10 @@ public class Main {
         //Реализуйте очередь задач с LinkedList.
         // Добавьте 3 задачи и обработайте их в порядке поступления.
 
-        /*
         TaskQueue tasks = new TaskQueue();
+
+        tasks.processNextTask();
+
         tasks.addTask("To do laundry");
         tasks.addTask("To do homework");
         tasks.addTask("To pet the cat");
@@ -20,12 +22,11 @@ public class Main {
         tasks.processNextTask();
         tasks.printTasks();
 
-         */
-
         //Задача 5:
         //Используйте ListIterator для прохода по LinkedList в обоих направлениях.
 
 
+        /*
         MyListIterator myListIterator = new MyListIterator();
 
         myListIterator.addElement(4);
@@ -35,6 +36,7 @@ public class Main {
         myListIterator.addElement(55555);
 
         myListIterator.iterateMyList();
+         */
 
     }
 }

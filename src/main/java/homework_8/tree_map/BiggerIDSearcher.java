@@ -28,6 +28,6 @@ public class BiggerIDSearcher {
         Integer biggerId = employees.higherKey(id);
         if (biggerId == null) {
             System.out.println("No bigger key!");
-        } System.out.println("The nearest bigger ID is: " + employees.higherKey(id));
+        } System.out.println("The nearest bigger ID is: " + biggerId);
     }
 }
