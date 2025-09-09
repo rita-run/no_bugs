@@ -1,4 +1,4 @@
-package homework_9.task4;
+package homework_9.exceptions.task4;
 
 public class EmailChecker {
     //4. Создание и использование собственного непроверяемого исключения

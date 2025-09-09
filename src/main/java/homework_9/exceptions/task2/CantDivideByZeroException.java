@@ -1,4 +1,4 @@
-package homework_9.task2;
+package homework_9.exceptions.task2;
 
 //unchecked: Runtime exception
 public class CantDivideByZeroException extends RuntimeException {

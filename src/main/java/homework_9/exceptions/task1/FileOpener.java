@@ -1,4 +1,4 @@
-package homework_9.task1;
+package homework_9.exceptions.task1;
 
 import java.io.FileReader;
 import java.io.IOException;

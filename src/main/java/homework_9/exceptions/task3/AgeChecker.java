@@ -1,4 +1,4 @@
-package homework_9.task3;
+package homework_9.exceptions.task3;
 
 public class AgeChecker {
     //3. Создание и использование собственного проверяемого исключения

@@ -1,4 +1,4 @@
-package homework_9.task4;
+package homework_9.exceptions.task4;
 
 public class InvalidEmailException extends RuntimeException {
     public InvalidEmailException(String message) {

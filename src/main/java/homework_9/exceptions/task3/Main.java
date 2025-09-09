@@ -1,4 +1,4 @@
-package homework_9.task3;
+package homework_9.exceptions.task3;
 
 public class Main {
     public static void main(String[] args) {

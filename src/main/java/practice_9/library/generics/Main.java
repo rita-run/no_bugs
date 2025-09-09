@@ -10,8 +10,11 @@ public class Main {
         integerBox.setElement(3);
 
         Box<Book> bookBox = new Box<>();
-        bookBox.setElement(new Book("Book"));*/
-    }
+        bookBox.setElement(new Book("Book"));
 
+        Box<Magazine> magazineBox = new Box<>();
+        magazineBox.setElement(new Magazine("Magazine"));
+                 */
+    }
 
 }
