@@ -17,6 +17,4 @@ public class MethodsToCheckTest {
     public void setupTest() {
         methodsToCheck = new MethodsToCheck();
     }
-
-
 }

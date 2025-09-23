@@ -21,6 +21,4 @@ public class NumberBox<T extends Number> {
         }
         return sum;
     }
-
-
 }
