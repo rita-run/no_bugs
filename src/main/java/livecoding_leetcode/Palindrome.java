@@ -1,4 +1,4 @@
-package top_livecoding_tasks;
+package livecoding_leetcode;
 
 import java.util.Arrays;
 import java.util.List;
@@ -14,11 +14,7 @@ public class Palindrome {
 
         List<String> list = Arrays.asList("Anna", "Was it a cat I saw?", "a", "Java", " ", "", null);
 
-        list.forEach(str->{
-            System.out.println("Is the string \"" + str + "\" a palindrome? - " + isPalindrome(str));
-        });
-
-
+        list.forEach(str-> System.out.println("Is the string \"" + str + "\" a palindrome? - " + isPalindrome(str)));
     }
 
     public static boolean isPalindrome(String str) {

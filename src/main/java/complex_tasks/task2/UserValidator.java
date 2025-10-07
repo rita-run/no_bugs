@@ -52,7 +52,7 @@ public class UserValidator {
     //Проверка возраста: Возраст должен быть в пределах от 18 до 100 лет.
     public boolean checkAge(User user) {
         if (isValidationEnabled()) {
-            if (user.getAge() >= 18 || user.getAge() <= 100) {
+            if (user.getAge() >= 18 && user.getAge() <= 100) {
                 System.out.println("Age is valid");
                 return true;
             } else {

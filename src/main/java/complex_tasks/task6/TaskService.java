@@ -17,12 +17,12 @@ public class TaskService<T> {
     }
 
     public synchronized void deleteTaskById(T id) {
-        Optional<Task<T>> foundTask = taskList.stream()
-                .filter(t -> t.getId().equals(id))
-                .findFirst();
-        foundTask.ifPresentOrElse(taskList::remove, () -> {
-            throw new TaskNotFoundException("Task not found!");
-        });
+        //1) we go through the task list and search for the task with id we passed as argument
+        //2) we try to remove it with removeIf method, and if removed it'll return true
+        //3) if method did not return true -> exception
+        if (!taskList.removeIf(task -> task.getId().equals(id))) {
+            throw new IllegalArgumentException("Task not found!");
+        }
     }
 
     public List<Task<T>> filterByStatus(String status) {

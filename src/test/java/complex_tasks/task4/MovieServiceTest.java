@@ -19,6 +19,14 @@ public class MovieServiceTest {
         assertEquals(10, service.returnCopyOfMovieList().get(terminator).getFirst().getRating());
     }
 
+    @Test
+    public void userCanAddValidRatingIfThereIsNoMovieYet() {
+        MovieService<Integer> service = new MovieService<>();
+        Movie terminator = new Movie("Terminator");
+        service.addRating(terminator, new Rating<>(10));
+        assertEquals(10, service.returnCopyOfMovieList().get(terminator).getFirst().getRating());
+    }
+
     //calculateMeanRating
     @Test
     public void userCanCalculateMeanRating() {

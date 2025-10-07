@@ -34,6 +34,9 @@ public class MovieService<T extends Number> {
 
     public synchronized void addRating(Movie movieName, Rating<T> rating) {
         //find the movie by name (=by key), get the value (=ratingsLIst) and add rating to the ratingList
+        if(!moviesList.containsKey(movieName)) {
+            moviesList.put(movieName, new ArrayList<>()) ;
+        }
         if(rating.getRating().intValue() >= 1 && rating.getRating().intValue() <= 10) {
             moviesList.get(movieName).add(rating);
         } else throw new InvalidRatingException("Invalid rating!");

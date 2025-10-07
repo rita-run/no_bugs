@@ -75,7 +75,7 @@ public class EntityManager<T extends User> {
     }
 
     public List<T> filterByActivity(boolean isActive) {
-        return users.stream().filter(User::isActive)
+        return users.stream().filter(user -> user.isActive() == isActive)
                 .collect(Collectors.toList());
     }
 }

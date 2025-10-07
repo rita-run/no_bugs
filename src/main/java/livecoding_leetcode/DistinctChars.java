@@ -1,6 +1,4 @@
-package top_livecoding_tasks;
-
-import practice_9.library.Library;
+package livecoding_leetcode;
 
 import java.util.HashSet;
 import java.util.List;
@@ -16,7 +14,6 @@ public class DistinctChars {
         list.forEach(str -> {
             System.out.println("Are all the symbols in the string \"" + str + "\" unique? - " + ifAllCharsUnique(str));
         });
-
     }
 
     public static boolean ifAllCharsUnique(String str) {

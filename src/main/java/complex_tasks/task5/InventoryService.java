@@ -24,6 +24,7 @@ public class InventoryService {
     }
 
     public void getProductByCategory(String category, String productName) {
+        if (category == null) throw new IllegalArgumentException("No such category!");
         //get the list of products by category
         List <Product> productsList = inventoryList.get(category);
         //from this list get the product needed by name
