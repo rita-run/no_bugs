@@ -1,4 +1,4 @@
 package livecoding_leetcode;
 
-public class Main {
+public class SortByPrefix {
 }
