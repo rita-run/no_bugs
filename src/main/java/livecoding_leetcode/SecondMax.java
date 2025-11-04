@@ -16,14 +16,14 @@ public class SecondMax {
         2.2) 1, 1
          */
 
-        System.out.println(returnSecondMax(new int[] {1, 4, 3, 2, 5}));
-        System.out.println(returnSecondMax(new int[] {1, -1}));
+//        System.out.println(returnSecondMax(new int[] {1, 4, 3, 2, 5}));
+//        System.out.println(returnSecondMax(new int[] {1, -1}));
         System.out.println(returnSecondMax(new int[] {1, 1}));
-        System.out.println(returnSecondMax(new int[] {1}));
-        System.out.println(returnSecondMax(new int[] {}));
-        System.out.println(returnSecondMaxStream(new int[] {1, 4, 3, 2, 5}));
-        System.out.println(returnSecondMinStream(new int[] {1, 4, 3, 2, 5}));
-        System.out.println(rerutnSecondMaxSteamWNSorting(new int[] {1, 4, 3, 2, 5}));
+//        System.out.println(returnSecondMax(new int[] {1}));
+//        System.out.println(returnSecondMax(new int[] {}));
+//        System.out.println(returnSecondMaxStream(new int[] {1, 4, 3, 2, 5, 5}));
+//        System.out.println(returnSecondMinStream(new int[] {1, 4, 3, 2, 5}));
+//        System.out.println(returnSecondMaxSteamWNSorting((new int[] {1, 4, 3, 2, 5})));
     }
 
     public static int returnSecondMax(int[] array) {
@@ -69,7 +69,7 @@ public class SecondMax {
                 .orElseThrow(() -> new NoSuchElementException("No 2nd min"));
     }
 
-    public static int rerutnSecondMaxSteamWNSorting(int[] arr) {
+    public static int returnSecondMaxSteamWNSorting(int[] arr) {
         if (arr == null || arr.length < 2) throw new IllegalArgumentException();
 
         int max = Arrays.stream(arr)

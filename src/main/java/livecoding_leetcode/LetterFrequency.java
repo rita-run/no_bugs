@@ -3,7 +3,7 @@ package livecoding_leetcode;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class Main {
+public class LetterFrequency {
     /*
     banana
     b: 1

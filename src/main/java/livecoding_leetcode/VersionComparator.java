@@ -1,6 +1,6 @@
 package livecoding_leetcode;
 
-public class Main {
+public class VersionComparator {
     /*
     1.2.3
     1.10.1

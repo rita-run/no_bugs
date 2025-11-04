@@ -1,4 +1,4 @@
-package clean_code.task_1;
+package clean_code.practice.task_1;
 
 class Project {
     private UserRepository userRepository;

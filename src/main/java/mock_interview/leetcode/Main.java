@@ -1,56 +1,52 @@
-package mock_interview.litcode;
+package mock_interview.leetcode;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     /*
-        int [int] 1st not repeating number
-        [2 2 1 3] -> 1
-        [2 1 3]
-        [5 5 4 5] -> 4
+    [1, 4, 7]
+    [2, 5, 7]
+    -> [1, 2, 4, 5, 7] arr
 
-        [2 2 2] -> -1
-        [2] -> 2
+    []
+    []
 
-        [] -> -1
+    77
+    88
 
-        [0 0 2] - 2
-
-        [1 2 3 2 1 4] -> 3
-
-        1) go through arr and put all the el to map
-        2) get all the values where value = 1 -> put it to an arr
-        3) get the 1st el
-         */
+    1) put all the nums from 1st arr
+    2) list -> sort it
+    3) turn back to an arr
+     */
     public static void main(String[] args) {
-        System.out.println(firstNumber(new int[] {2, 2, 1, 3}));
-        System.out.println(firstNumber(new int[] {2, 1, 3}));
-        System.out.println(firstNumber(new int[] {5, 5, 4, 5}));
-        System.out.println(firstNumber(new int[] {2, 2, 2}));
-        System.out.println(firstNumber(new int[] {2}));
-        System.out.println(firstNumber(new int[] {}));
-        System.out.println(firstNumber(new int[] {1, 2, 3, 2, 1, 4}));
+        System.out.println(Arrays.toString(arrays(new int[]{1, 4, 7, 9, 10, 19}, new int[]{2, 5, 7})));
     }
 
-    public static int firstNumber(int[] arr) {
-        Map<Integer, Integer> map = new LinkedHashMap();
+    public static int[] arrays(int[] arr1, int[] arr2) {
+        if (arr1.length > 5 || arr2.length > 5) throw new IllegalArgumentException();
 
-        for (int i : arr) {
-            map.put(i, map.getOrDefault(i,0) + 1);
+        List<Integer> list = new ArrayList<>();
+
+        for (int n : arr1) {
+            list.add(n);
         }
 
-        ArrayList<Integer> arrayList = new ArrayList<>();
-
-        for (Map.Entry<Integer,Integer> entry : map.entrySet()) {
-            if (entry.getValue() == 1) {
-                arrayList.add(entry.getKey());
-            }
+        for (int n : arr2) {
+            list.add(n);
         }
 
-        if (arrayList.isEmpty()) {
-            return -1;
-        } else return arrayList.getFirst();
+        List<Integer> sortedList = list.stream()
+                .sorted()
+                .toList();
+
+        int[] targetArr = new int[sortedList.size()];
+
+        for (int i = 0; i < targetArr.length; i++) {
+            targetArr[i] = sortedList.get(i);
+        }
+
+        return targetArr;
     }
 }

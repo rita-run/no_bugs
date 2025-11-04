@@ -2,7 +2,7 @@ package livecoding_leetcode;
 
 import java.util.List;
 
-public class FindMinMax {
+public class MinMax {
     public static void main(String[] args) {
         //[2, 3, 1, 5,4]
         //min = 1

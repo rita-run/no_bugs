@@ -20,7 +20,7 @@ public class HappyNumberFinder {
 
     public static int findHappyNumber(int[] arr, int x) {
         //1) we need to add all the nums to a map and calculate the values (times met)
-        //2) fimd all the values = x
+        //2) find all the values = x
         //3) find the max key = the first
 
         Map<Integer, Integer> map = new TreeMap<>();

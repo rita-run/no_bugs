@@ -12,12 +12,12 @@ public class WordsCounter {
         System.out.println(countWords("e "));
         System.out.println(countWords(" e "));
         System.out.println(countWords("  "));
-        System.out.println(countWords(new String("a").repeat(201)));
+        System.out.println(countWords("a".repeat(201)));
     }
 
     public static long countWords(String str) {
-        if (str.length() > 200) throw new IllegalArgumentException("The string length must be less than 200 digits!");
         if (str == null || str.trim().isEmpty()) return 0;
+        if (str.length() > 200) throw new IllegalArgumentException("The string length must be less than 200 digits!");
         String[] words = str.trim().split("\\s+");
         return words.length;
     }

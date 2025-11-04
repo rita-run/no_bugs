@@ -3,7 +3,7 @@ package livecoding_leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class MaxOfTwoArrays {
     public static void main(String[] args) {
         //input: 2 arrays
         //output: max number of 2 arrays

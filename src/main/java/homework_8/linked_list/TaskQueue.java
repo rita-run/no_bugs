@@ -23,7 +23,7 @@ public class TaskQueue {
             System.out.println();
         } else {
             System.out.println();
-            System.out.println("The next task to process is: " + tasks.getFirst());
+            System.out.println("The next task to showPDF is: " + tasks.getFirst());
             System.out.println("DONE: " + tasks.removeFirst());
             System.out.println();
         }

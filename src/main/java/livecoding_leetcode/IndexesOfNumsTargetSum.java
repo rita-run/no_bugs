@@ -2,7 +2,7 @@ package livecoding_leetcode;
 
 import java.util.Arrays;
 
-public class Main {
+public class IndexesOfNumsTargetSum {
     /*
     Find the indexes of numbers, sum of which is the target number
     [1, 8, 10, 11], 12 -> 0, 3
@@ -22,7 +22,7 @@ public class Main {
         for (int i = 0; i < arr.length; i++){
             for (int y = i + 1; y < arr.length; y++) {
                 if (arr[i] + arr[y] == n) {
-                    return new int[] {i,y};
+                    return new int[] {i, y};
                 }
             }
         } return new int[0];

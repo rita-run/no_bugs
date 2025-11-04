@@ -1,12 +1,9 @@
 package livecoding_leetcode;
 
-import java.awt.image.Kernel;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-public class Main {
+public class SumOfDigits {
     /*
     int n
     op: sum of digits

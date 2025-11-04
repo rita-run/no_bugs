@@ -2,7 +2,7 @@ package livecoding_leetcode;
 
 import java.util.Arrays;
 
-public class Temp {
+public class TargetNumber {
     /*
     [1, 2, 3, 4, 5], 6 -> 2, 4
     [1, 2], 3 -> 1,2

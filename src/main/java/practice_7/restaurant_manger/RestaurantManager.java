@@ -19,7 +19,7 @@ public class RestaurantManager {
         orders.addLast(order);
     }
 
-    //process order from the beginning of the queue
+    //showPDF order from the beginning of the queue
     public String getNextOrderForProcess() {
         return orders.poll();
     }
