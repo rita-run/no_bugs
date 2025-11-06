@@ -7,7 +7,6 @@ public abstract class Logicstics {
 
     public void planDelivery() {
         Transport transport = createTransport();
-
         transport.deliver();
     }
 }

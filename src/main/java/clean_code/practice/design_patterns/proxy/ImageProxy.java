@@ -9,10 +9,10 @@ public class ImageProxy implements Showable {
 
     }
 
-    //lazy download
+    //lazy getContent
     @Override
     public void show() {
-        //we wan to download image only once
+        //we wan to getContent image only once
         if (this.image == null) {
             this.image = new HighResolutionImage(imageFilePath);
         }
